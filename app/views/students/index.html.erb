@@ -2,7 +2,7 @@
 <ul id="students">
   <% @students.each do |student| %>
     <li>
-        <%= student.name %>
+        <%= link_to student.name, student_path(student), class: 'student-name' %>
     </li>
     <% end %>
 </ul>
