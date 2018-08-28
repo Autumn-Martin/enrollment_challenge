@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  before_action :set_student, only: [:delete, :edit, :update]
   def index
     @students = Student.all
   end
@@ -26,7 +27,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    @student.update(params[:id])
+    @student.update(student_params)
 
     redirect_to student_path(@student)
   end
@@ -41,5 +42,9 @@ class StudentsController < ApplicationController
 
   def student_params
     params.require(:student).permit(:name)
+  end
+
+  def set_student
+    @student = Student.find(params[:id])
   end
 end

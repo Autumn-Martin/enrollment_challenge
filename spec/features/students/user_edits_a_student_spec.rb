@@ -16,7 +16,7 @@ describe 'User visits /students/:id/edit' do
         visit edit_student_path(student)
 
         click_on "Update Student"
-        fill_in "Student[name]", with: new_name
+        fill_in "student[name]", with: new_name
 
         expect(path).to eq(student_path(student))
         expect(page).to have_content(student.name)
