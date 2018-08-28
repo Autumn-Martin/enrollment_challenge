@@ -3,8 +3,8 @@ require 'rails_helper'
 describe 'user sees all students' do
   describe 'they visit /students' do
     it 'displays all students' do
-      student_1 = Student.new(name: "Ada")
-      student_2 = Student.new(name: "Zeke")
+      student_1 = Student.create(name: "Ada")
+      student_2 = Student.create(name: "Zeke")
 
       visit students_path
 
@@ -12,4 +12,4 @@ describe 'user sees all students' do
       expect(page).to have_content(student_2.name)
     end
   end
-end 
+end
