@@ -5,7 +5,6 @@ describe 'User creates a student' do
     describe 'they fill in name and click submit' do
       it 'creates a student' do
         visit new_student_path
-        save_and_open_page
 
         fill_in 'student[name]', with: "Leia"
         click_on "Create Student"
