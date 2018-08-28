@@ -21,10 +21,14 @@ class StudentsController < ApplicationController
     end
   end
 
+  def edit
+    @student = Student.find(params[:id])
+  end 
+
   def destroy
     Student.destroy(params[:id])
     redirect_to students_path
-  end 
+  end
 
   private
 
