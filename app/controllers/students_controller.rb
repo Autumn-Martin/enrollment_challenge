@@ -23,7 +23,14 @@ class StudentsController < ApplicationController
 
   def edit
     @student = Student.find(params[:id])
-  end 
+  end
+
+  def update
+    @student.update(params[:id])
+
+    redirect_to student_path(@student)
+  end
+
 
   def destroy
     Student.destroy(params[:id])
