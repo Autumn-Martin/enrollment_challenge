@@ -21,6 +21,11 @@ class StudentsController < ApplicationController
     end
   end
 
+  def destroy
+    Student.destroy(params[:id])
+    redirect_to students_path
+  end 
+
   private
 
   def student_params
