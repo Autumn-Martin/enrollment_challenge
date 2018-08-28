@@ -1,6 +1,24 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/autumnmartin/turing/2module/friday_challenge/enrollment_challenge/spec/features/students/user_sees_one_student_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/autumnmartin/turing/2module/friday_challenge/enrollment_challenge/spec/models/student_spec.rb": [
         1,
         null,
@@ -23,7 +41,12 @@
       "/Users/autumnmartin/turing/2module/friday_challenge/enrollment_challenge/app/controllers/students_controller.rb": [
         1,
         1,
+        2,
+        null,
+        null,
         1,
+        1,
+        null,
         null,
         null
       ],
@@ -32,6 +55,6 @@
         null
       ]
     },
-    "timestamp": 1535486766
+    "timestamp": 1535487344
   }
 }
