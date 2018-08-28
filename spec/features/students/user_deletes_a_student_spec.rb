@@ -9,7 +9,7 @@ describe 'User deletes a student' do
 
         visit students_path
 
-        within ("student-#{student_2.id}") do
+        within ("#student-#{student_2.id}") do
           click_on "Delete"
         end
 
